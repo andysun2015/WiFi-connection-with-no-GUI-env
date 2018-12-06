@@ -29,9 +29,9 @@ sudo apt-get install wpasupplicant
 -Connect to AP.
 1. Enable wlan0  
   sudo ifconfig wlan0 up
-2. wpa_supplicant connection command 
+2. wpa_supplicant connection command  
   sudo wpa_supplicant -Dnl80211 -iwlan0 -c/home/rich/Mobile.conf
-3. Request IP
+3. Request IP  
   sudo dhclient wlan0
 
 FAQ:
