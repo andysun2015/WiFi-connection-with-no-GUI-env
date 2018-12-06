@@ -1,6 +1,6 @@
 # WiFi-connection-with-no-GUI-env
 
-*Sometimes we may use pure linux command mode environment to connect to internet and incur some problems, you can read the following step to try to resolve these problems.
+*Sometimes we may use pure linux command mode environment to connect to internet and some problems occur, you can read the following step to try to resolve these problems.
 
 *Wifi setup:  
 
