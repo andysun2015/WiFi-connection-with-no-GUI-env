@@ -17,18 +17,22 @@ Netgear A6210 wifi driver, ref: https://github.com/kaduke/Netgear-A6210 .
   (4) sudo make install . 
 
 
--install wpa_supplicant(if needed) . 
+-Install wpa_supplicant(if needed) . 
 
 sudo apt-get install wpasupplicant
 
--setup ssid/password via wpa_passphrase and save to config file . 
+-Setup ssid/password via wpa_passphrase and save to config file . 
 
   cmd:sudo wpa_passphrase ssid password . 
   sudo wpa_passphrase Mobile Lightsail@350 > /home/rich/Mobile.conf . 
 
--connect . 
-
-  sudo wpa_supplicant -Dn80211 -iwlan0 -c/home/rich/Mobile.conf -C
+-Connect to AP.
+1. Enable wlan0  
+  sudo ifconfig wlan0 up
+2. wpa_supplicant connection command 
+  sudo wpa_supplicant -Dnl80211 -iwlan0 -c/home/rich/Mobile.conf
+3. Request IP
+  sudo dhclient wlan0
 
 FAQ:
 1. connect fail.
